@@ -1,6 +1,6 @@
 {
-  "name": "cas-fee-projekt-1-starter-template",
-  "version": "1.0.0",
+  "name": "note-app",
+  "version": "0.0.1",
   "description": "Testat template",
   "main": "public/scripts/main.js",
   "type": "module",
@@ -15,14 +15,31 @@
   "author": "Michael Gfeller",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.21.0",
+    "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "html-validator-cli": "^7.0.1",
-    "stylelint": "^13.12.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0"
   },
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "mongoose": "^5.12.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grwllrnc/CAS-FEE-Projekt-1.git"
+  },
+  "keywords": [
+    "Übung",
+    "Javascript",
+    "CSS",
+    "HTML",
+    "CAS-FEE-2021"
+  ],
+  "bugs": {
+    "url": "https://github.com/grwllrnc/CAS-FEE-Projekt-1/issues"
+  },
+  "homepage": "https://github.com/grwllrnc/CAS-FEE-Projekt-1#readme"
 }
