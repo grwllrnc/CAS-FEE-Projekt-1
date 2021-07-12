@@ -1,8 +1,4 @@
-/*
- * 
- *
- */
-/* jshint esversion: 6 */
+/* Note App Form handler */
 
 const getFormData = form => {
     const formData = new FormData(form);
@@ -12,7 +8,7 @@ const getFormData = form => {
     }
     return arr;
 };
-const form = document.getElementById('form');
+const form = document.getElementById('form-notes');
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
     alert(getFormData(form).join('\n'));

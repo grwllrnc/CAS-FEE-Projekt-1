@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Note App</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous" defer></script>
-    <script type="module" src="scripts/db-handler.mjs" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous" defer></script> -->
     <script type="module" src="scripts/form-handler.mjs" defer></script>
     <script type="module" src="scripts/controls.mjs" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
@@ -36,7 +35,7 @@
           </div>
         </div>
         <div id="form-overlay" class="form-overlay">
-          <form id="form-notes" class="form-layout">
+          <form id="form-notes" class="form-layout" method="POST">
             <div class="col">
               <label for="title">Name der Notiz</label>
             </div>

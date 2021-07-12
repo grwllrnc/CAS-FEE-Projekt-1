@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Note App</title>
+    <script type="module" src="../js/controller/index-controller.mjs" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header class="header">
+        <h1>Note App</h1>
+      </header>
+      <main class="main">
+        <div class="controls">
+          <div class="task-list-controls">
+            <div class="task-list-buttons">
+              <form id="app-buttons" class="app-buttons">
+                <a id="new-task-btn" class="btn create-btn" href="note/" title="Neue Aufgabe hinzufügen">Aufgabe hinzufügen</a>
+                <select name="" id="theme-switch" class="btn dropdown" title="Theme umschalten">
+                  <option value="normal">Stil: normal</option>
+                  <option value="high-contrast">Stil: Hoher Kontrast</option>
+                </select>
+              </form>
+            </div>
+            <div class="task-list-filters">
+              <button id="deadline-btn" class="btn task-filter-btn" title="Nach Enddatum sortieren">Nach Enddatum</button>
+              <button id="creation-date-btn" class="btn task-filter-btn" title="Nach Erstellungsdatum sortieren">Nach Erstellungsdatum</button>
+              <button id="importance-btn" class="btn task-filter-btn" title="Nach Wichtigkeit sortieren">Nach Wichtigkeit</button>
+              <button id="finished-btn" class="btn task-filter-btn" title="Nach erledigten Aufgaben filtern">Erledigte Aufgaben</button>
+            </div>
+          </div>
+        </div>
+        <div class="task-list-area">
+        </div>
+      </main>
+      <footer class="footer">
+      </footer>
+    </div>
+  </body>
+</html>

@@ -37,6 +37,7 @@ textarea {
 
 body {
   color: var(--color);
+  font-family: var(--font-family);
   font-size: var(--base-font-size);
   background-color: var(--bg-color);
   /* --content-background: var(--norm-content-background); */
@@ -146,6 +147,7 @@ aside {
 
 .btn {
   color: var(--btn-color);
+  cursor: pointer;
   background-color: var(--btn-bgcolor);
   border: 1px solid gray;
   text-decoration: none;
@@ -162,11 +164,11 @@ aside {
 
 .form-overlay {
   background-color: var(--content-background);
-  height: 250px;
+  min-height: 250px;
   padding: 0.7rem 0;
   position: relative;
-  right: 1140px;
-  top: -43px;
+  /* right: 1140px;
+  top: -43px; */
   transition: right 0.8s ease-out;
   z-index: 999;
 }
@@ -198,8 +200,53 @@ aside {
   margin-bottom: 1rem;
 }
 
+.task-list-area {
+  min-height: 300px;
+  position: relative;
+}
+
+.task-list-area .create-new-btn-wrapper {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content:  center;
+  
+}
+
+.task-list-area .create-new-btn-wrapper p {
+  font-size: 90%;
+}
+
+.task-list-area .create-new-btn-wrapper .create-btn {
+  background-color: #fff;
+}
+
+.task-list-area ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.note-date.expired {
+  color: red;
+}
+  
+.note-title h3 {
+	margin-bottom: 0;
+}
+
+.note-meta {
+  display: flex;
+  font-size: 85%;
+  justify-content: space-between;  
+}
+
 .create-btn::before {
 	content: "+ ";
 	font-weight: 900;
 }
 
+body.high-contrast .btn.create-btn {
+	background: unset;
+}

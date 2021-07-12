@@ -1,6 +1,4 @@
-/*
- * Theme switch
-*/
+/* Theme switch Handler */
 
 const themeSwitch = () => {
     const switchState = document.getElementById('theme-switch').value;
@@ -13,5 +11,4 @@ const themeSwitch = () => {
     }
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { themeSwitch };

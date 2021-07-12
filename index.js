@@ -1,21 +1,5 @@
-import express from 'express';
+import { app } from './app.js';
 
-const app = express();
-const port = 3000;
-const router = express.Router;
-
-app.use(express.static('public'));
-
-app.listen(port, () => {
-    // eslint-disable-next-line no-console
-    console.log(`Example app listening at http://localhost:${port}`);
+app.listen(3000, '127.0.0.1', () => {
+  console.log('listening on http://localhost:3000');
 });
-
-app.route('/notes')
-    .get((req, res) => { res.send('Alle Notizen'); });
-
-app.route('/note:id')
-    .get((req, res) => { res.send('Einzel Ansicht Notiz'); });
-
-app.route('/note')
-    .post((req, res) => { res.send('Save Notiz'); });
